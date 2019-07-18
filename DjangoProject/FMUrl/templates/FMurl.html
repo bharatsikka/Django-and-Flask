@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+
+<br>
+<br>
+<h4 class ="grey lighten-5" >Please Fill the URL Below:</h4>
+
+<div class ="grey lighten-5">
+<form action="" method="POST" name="form" >
+{% csrf_token %}
+
+<table>
+    {{ form }}
+
+    </table>
+<input class="waves-effect waves-light btn-large" type="submit" value="Submit" >
+
+</form>
+</div>
+
+{% endblock %}

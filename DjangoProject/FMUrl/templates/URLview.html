@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<h4>Please Put in your Downloadable Sharepoint/Online Document URL below :</h4>
+<form action="" method="POST" name="form" >
+{% csrf_token %}
+
+<table>
+    {{ form }}
+
+    </table>
+<input type="submit" value="Submit">
+
+</form>
+
+
+{% endblock %}

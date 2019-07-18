@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<form name="form">
+
+<table name="table">
+
+<ul>
+<div class="input-field col s12">
+    <h6>URL:</h6>
+    <textarea disabled class="materialize-textarea lime lighten-5 disabled" style="display:block" wrap="soft">{{ url }}
+</textarea>
+
+
+
+
+    <!--<div class="col s12 m6">-->
+          <!--<div class="card blue-grey darken-1">-->
+            <!--<div class="card-content white-text">-->
+                <h6>Output:</h6>
+                <table border="1" class = "card blue-grey darken-1 white-text">
+                    {% for keys,values in data.items %}
+                    <tr>
+                        <td>
+                            <b><u>{{ keys }}:</u></b>
+                            <br>
+                            {{ values }}
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+
+                </table>
+
+            </div>
+          </div>
+    </div>
+</div>
+</ul>
+
+
+</table>
+    </form>
+{% endblock %}
